@@ -1,121 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>My Resume</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+			}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+			.resume {
+				max-width: 800px;
+				margin: 50px auto;
+				padding: 20px;
+				background-color: #fff;
+				border-radius: 8px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
 
-    .resume {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+			.resume__header {
+				text-align: center;
+			}
 
-    .resume__header {
-      text-align: center;
-    }
+			.resume__name {
+				font-size: 24px;
+				color: #333;
+				margin: 0;
+			}
 
-    .resume__name {
-      font-size: 24px;
-      color: #333;
-      margin: 0;
-    }
+			.resume__title {
+				font-size: 18px;
+				color: #666;
+				margin-top: 5px;
+			}
 
-    .resume__title {
-      font-size: 18px;
-      color: #666;
-      margin-top: 5px;
-    }
+			.resume__section {
+				margin-top: 20px;
+			}
 
-    .resume__section {
-      margin-top: 20px;
-    }
+			.resume__heading {
+				font-size: 20px;
+				color: #333;
+				margin-bottom: 10px;
+			}
 
-    .resume__heading {
-      font-size: 20px;
-      color: #333;
-      margin-bottom: 10px;
-    }
+			.resume__subheading {
+				font-size: 16px;
+				color: #666;
+				margin-top: 5px;
+				margin-bottom: 15px;
+			}
 
-    .resume__subheading {
-      font-size: 16px;
-      color: #666;
-      margin-top: 5px;
-      margin-bottom: 15px;
-    }
+			.resume__list {
+				margin: 0;
+				padding-left: 20px;
+			}
 
-    .resume__list {
-      margin: 0;
-      padding-left: 20px;
-    }
+			.resume__contact {
+				margin-top: 20px;
+			}
 
-    .resume__contact {
-      margin-top: 20px;
-    }
+			.resume__contact p {
+				margin: 5px 0;
+				font-size: 16px;
+				color: #666;
+			}
 
-    .resume__contact p {
-      margin: 5px 0;
-      font-size: 16px;
-      color: #666;
-    }
+			.resume__contact a {
+				color: #007bff;
+				text-decoration: none;
+			}
+		</style>
+	</head>
 
-    .resume__contact a {
-      color: #007bff;
-      text-decoration: none;
-    }
-  </style>
-</head>
+	<body>
+		<div class="resume">
+			<header class="resume__header">
+				<h1 class="resume__name">John Doe</h1>
+				<p class="resume__title">Web Developer</p>
+			</header>
 
-<body>
+			<main>
+				<section class="resume__section">
+					<h2 class="resume__heading">About Me</h2>
+					<img
+						src="profile.jpg"
+						alt="John Doe"
+						width="200"
+					/>
+					<p class="resume__subheading">
+						I am a passionate web developer with experience in HTML, CSS, and
+						JavaScript.
+					</p>
+				</section>
 
-  <div class="resume">
-    <header class="resume__header">
-      <h1 class="resume__name">John Doe</h1>
-      <p class="resume__title">Web Developer</p>
-    </header>
+				<section class="resume__section">
+					<h2 class="resume__heading">Experience</h2>
+					<h3 class="resume__subheading">Web Developer</h3>
+					<p class="resume__subheading">XYZ Company - June 2020 to Present</p>
+					<ul class="resume__list">
+						<li>
+							Developed responsive websites using HTML, CSS, and JavaScript.
+						</li>
+						<li>
+							Collaborated with team members to implement new features and
+							improve existing ones.
+						</li>
+					</ul>
+				</section>
 
-    <main>
-      <section class="resume__section">
-        <h2 class="resume__heading">About Me</h2>
-        <p class="resume__subheading">I am a passionate web developer with experience in HTML, CSS, and JavaScript.</p>
-      </section>
+				<section class="resume__section">
+					<h2 class="resume__heading">Education</h2>
+					<h3 class="resume__subheading">
+						Bachelor of Science in Computer Science
+					</h3>
+					<p class="resume__subheading">ABC University - Graduated in 2019</p>
+				</section>
 
-      <section class="resume__section">
-        <h2 class="resume__heading">Experience</h2>
-        <h3 class="resume__subheading">Web Developer</h3>
-        <p class="resume__subheading">XYZ Company - June 2020 to Present</p>
-        <ul class="resume__list">
-          <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
-          <li>Collaborated with team members to implement new features and improve existing ones.</li>
-        </ul>
-      </section>
-
-      <section class="resume__section">
-        <h2 class="resume__heading">Education</h2>
-        <h3 class="resume__subheading">Bachelor of Science in Computer Science</h3>
-        <p class="resume__subheading">ABC University - Graduated in 2019</p>
-      </section>
-
-      <section class="resume__section resume__contact">
-        <h2 class="resume__heading">Contact Me</h2>
-        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
-        <p>Phone: +1234567890</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">johndoe</a></p>
-      </section>
-    </main>
-  </div>
-
-</body>
-
+				<section class="resume__section resume__contact">
+					<h2 class="resume__heading">Contact Me</h2>
+					<p>
+						Email:
+						<a href="mailto:john.doe@example.com">john.doe@example.com</a>
+					</p>
+					<p>Phone: +1234567890</p>
+					<p>
+						LinkedIn:
+						<a
+							href="https://www.linkedin.com/in/johndoe"
+							target="_blank"
+							>johndoe</a
+						>
+					</p>
+				</section>
+			</main>
+		</div>
+	</body>
 </html>
